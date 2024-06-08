@@ -1,4 +1,4 @@
-"""The Met component."""
+"""The Met Dynamic component."""
 from __future__ import annotations
 
 import logging
@@ -24,7 +24,7 @@ class MetWeatherConfigEntry(TypedDict):
 
 
 async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> bool:
-    """Set up Met as config entry."""
+    """Set up Met Dynamic as config entry."""
     if config_entry.data.get("track_home", False) and (
         (not hass.config.latitude and not hass.config.longitude)
         or (
@@ -33,7 +33,7 @@ async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> b
         )
     ):
         _LOGGER.warning(
-            "Skip setting up met.no integration; No Home location has been set"
+            "Skip setting up Met Weather Dynamic Location integration; No Home location has been set"
         )
         return False
 
