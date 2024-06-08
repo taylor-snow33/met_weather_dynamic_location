@@ -1,4 +1,4 @@
-"""DataUpdateCoordinator for Met.no integration."""
+"""DataUpdateCoordinator for Met Weather Dynamic Location integration."""
 
 from __future__ import annotations
 
