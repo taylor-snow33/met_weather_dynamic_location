@@ -34,7 +34,7 @@ from homeassistant.components.weather import (
     DOMAIN as WEATHER_DOMAIN,
 )
 
-DOMAIN = "met"
+DOMAIN = "met_dynamic"
 
 HOME_LOCATION_NAME = "Home"
 
