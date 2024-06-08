@@ -1,4 +1,4 @@
-"""Support for Met.no weather service."""
+"""Support for Met Weather Dynamic Location service."""
 
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ from .const import (
 )
 from .coordinator import MetDataUpdateCoordinator
 
-DEFAULT_NAME = "Met.no"
+DEFAULT_NAME = "Met Weather Dynamic Location"
 
 
 async def async_setup_entry(
